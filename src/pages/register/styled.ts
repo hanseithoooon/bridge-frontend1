@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const registerContainer = styled.div`
-    margin-top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,8 +8,9 @@ export const registerContainer = styled.div`
 `;
 
 export const registerIntroduce = styled.div`
-    margin-bottom: 10px;
-    font-size: large;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-size: x-large;
 `;
 
 export const registerInputContainer = styled.div`
@@ -20,17 +20,19 @@ export const registerInputContainer = styled.div`
 `;
 
 export const registerInputId = styled.input`
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
     border: none;
     border-bottom: solid 1px #ccc;
-
+    width: 270px;
     &:focus {
         outline: none;
     }
 `;
 
 export const registerInputPw = styled.input`
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
     border: none;
     border-bottom: solid 1px #ccc;
 
@@ -40,7 +42,8 @@ export const registerInputPw = styled.input`
 `;
 
 export const registerInputName = styled.input`
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
     border: none;
     border-bottom: solid 1px #ccc;
 
@@ -50,7 +53,8 @@ export const registerInputName = styled.input`
 `;
 
 export const registerInputBirth = styled.input`
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
     border: none;
     border-bottom: solid 1px #ccc;
 
@@ -60,7 +64,8 @@ export const registerInputBirth = styled.input`
 `;
 
 export const registerInputEmail = styled.input`
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
     border: none;
     border-bottom: solid 1px #ccc;
 
@@ -70,6 +75,7 @@ export const registerInputEmail = styled.input`
 `;
 
 export const registerInputPhone = styled.input`
+    font-size: 14px;
     margin-bottom: 10px;
     border: none;
     border-bottom: solid 1px #ccc;
@@ -79,4 +85,52 @@ export const registerInputPhone = styled.input`
     }
 `;
 
-export const registerInputSubmit = styled.button``;
+export const registerInputSubmit = styled.button`
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+    color: white;
+    background-color: #0064ff;
+`;
+
+export const standardBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+`;
+
+export const standardText = styled.div`
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+`;
+
+export const idCheckBox = styled.div`
+    display: flex;
+`;
+
+export const idCheckBtn = styled.button`
+    height: 30px;
+    background-color: white;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    border: solid 3px #ccc;
+    width: 120px;
+    height: 50px;
+`;
+
+export const CNBox = styled.input`
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+
+    &:focus {
+        outline: none;
+    }
+`;
