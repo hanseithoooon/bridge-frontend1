@@ -1,5 +1,6 @@
 import * as S from "./styled";
 import { SagiArticleDummy } from "../../constant/sagi/sagi";
+import pin from "../../assets/img/pin.png";
 
 export const HomePage: React.FC = () => {
   {
@@ -12,7 +13,7 @@ export const HomePage: React.FC = () => {
           return (
             <div style={{ display: "flex", marginTop: 30 }}>
               <S.ArticleItema key={index}>
-                <S.ArticleIcona>📌</S.ArticleIcona>
+                <S.ArticleIcona src={pin} width={30} />
                 <div
                   style={{
                     marginRight: 30,

@@ -39,7 +39,7 @@ export const ArticleSubTexta = styled.p`
   color: grey;
 `;
 
-export const ArticleIcona = styled.span`
+export const ArticleIcona = styled.img`
   font-size: 22px;
 `;
 
