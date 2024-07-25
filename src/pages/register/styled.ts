@@ -16,6 +16,7 @@ export const registerIntroduce = styled.div`
 export const registerInputContainer = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     gap: 20px;
 `;
 

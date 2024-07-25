@@ -30,10 +30,6 @@ export const RegisterPage: React.FC = () => {
                     <S.standardText>생년월일</S.standardText>
                     <S.registerInputBirth type='text' placeholder='0000.00.00' />
                 </S.standardBox>
-                <S.standardBox>
-                    <S.standardText>이메일</S.standardText>
-                    <S.registerInputEmail type='email' placeholder='이메일 주소를 입력해주세요' />
-                </S.standardBox>
                 <S.idCheckBox>
                     <S.standardBox>
                         <S.standardText>전화번호</S.standardText>
