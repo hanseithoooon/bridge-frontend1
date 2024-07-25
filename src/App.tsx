@@ -8,6 +8,7 @@ import { LoginPage } from "./pages/login";
 import { Layout } from "./components/common/layout";
 import { BottomNavbar } from "./components/common/bottomNavbar";
 import { Header } from "./components/common/header";
+import { PostPage } from "./pages/post";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/article" element={<ArticlePage />}></Route>
-            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/home" element={<HomePage />}></Route>
             <Route path="/register" element={<RegisterPage />}></Route>
             <Route path="/profile" element={<ProfilePage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
+            <Route path="/post" element={<PostPage />}></Route>
           </Routes>
         </BrowserRouter>
       </Layout>
