@@ -31,7 +31,7 @@ export const ArticleSubText = styled.p`
   color: grey;
 `;
 
-export const ArticleIcon = styled.span`
+export const ArticleIcon = styled.img`
   font-size: 22px;
 `;
 

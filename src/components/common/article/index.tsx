@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 import { ArticleDummy } from "../../../constant/articleDummy";
+import pin from "../../../assets/img/pin.png";
 
 interface ArticleProps {
   selectedCategory: string;
@@ -38,7 +39,7 @@ export const Article: React.FC<ArticleProps> = ({ selectedCategory }) => {
       {filteredArticles.map((article, index) => (
         <S.ArticleItem key={index}>
           <S.anotherCont href="full">
-            <S.ArticleIcon>📌</S.ArticleIcon>
+            <S.ArticleIcon src={pin} width={20} height={20} />
             <div style={{ lineHeight: 1.2 }}>
               <S.ArticleMainText>{article.main} </S.ArticleMainText>
               <S.ArticleSubText>{article.sub}</S.ArticleSubText>

@@ -27,7 +27,7 @@ export const BottomNavbarItemContainer = styled.a`
   text-decoration: none;
 `;
 
-export const BottomNavbarIcon = styled.span``;
+export const BottomNavbarIcon = styled.img``;
 
 export const BottomNavbarNewIcon = styled.span``;
 
