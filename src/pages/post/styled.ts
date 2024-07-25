@@ -37,9 +37,14 @@ export const PostButton = styled.button`
   border: none;
   border-radius: 10px;
   font-size: 20px;
-  margin-top: 80px;
+  margin-top: 30px;
 `;
 
-export const DropDown = styled.select``;
+export const DropDown = styled.select`
+  border-radius: 8px;
+  height: 30px;
+  width: 80px;
+  margin-top: 20px;
+`;
 
 export const Option = styled.option``;

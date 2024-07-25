@@ -1,14 +1,39 @@
-import React from "react";
 import * as S from "./styled";
-import { Article } from "../../components/common/article";
+import { SagiArticleDummy } from "../../constant/sagi/sagi";
 
 export const HomePage: React.FC = () => {
-  return (
-    <>
-      <S.HomeMainText>
-        가장 인기있는 <br /> 게시물들이에요!
-      </S.HomeMainText>
-      <Article selectedCategory={"정보"} />
-    </>
-  );
+  {
+    return (
+      <>
+        <S.HomeMainText>
+          가장 인기있는 <br /> 게시물들이에요!
+        </S.HomeMainText>
+        {SagiArticleDummy.main.map((item, index) => {
+          return (
+            <div style={{ display: "flex", marginTop: 30 }}>
+              <S.ArticleItema key={index}>
+                <S.ArticleIcona>📌</S.ArticleIcona>
+                <div
+                  style={{
+                    marginRight: 30,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    textAlign: "center",
+                  }}
+                >
+                  <S.ArticleMainTexta>{item}</S.ArticleMainTexta>
+                  <S.ArticleSubTexta>
+                    {SagiArticleDummy.sub[index]}
+                  </S.ArticleSubTexta>
+                </div>
+
+                <S.goodIcona>{SagiArticleDummy.like[index]}👍</S.goodIcona>
+              </S.ArticleItema>
+            </div>
+          );
+        })}
+      </>
+    );
+  }
 };

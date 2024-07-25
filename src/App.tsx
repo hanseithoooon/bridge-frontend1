@@ -9,6 +9,7 @@ import { Layout } from "./components/common/layout";
 import { BottomNavbar } from "./components/common/bottomNavbar";
 import { Header } from "./components/common/header";
 import { PostPage } from "./pages/post";
+import { FullPage } from "./pages/full";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/profile" element={<ProfilePage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
             <Route path="/post" element={<PostPage />}></Route>
+            <Route path="/full" element={<FullPage />}></Route>
           </Routes>
         </BrowserRouter>
       </Layout>
